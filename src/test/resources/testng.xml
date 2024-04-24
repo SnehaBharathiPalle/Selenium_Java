@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Testing Suite">
+	<listeners>
+    <listener class-name="Base.Listeners" />
+     <listener class-name="Base.RetryListener" />
+  </listeners>
+   <test name = "Tests">
+	  <classes>
+		  <class name="MyTests.FirstSeleniumScript"/>
+	  </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
