@@ -1,122 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-24T15:15:23 EDT" name="Default suite" finished-at="2024-04-24T15:15:27 EDT" duration-ms="4868">
+  <suite started-at="2024-04-29T16:54:21 EDT" name="Parallel Testing Suite" finished-at="2024-04-29T16:54:28 EDT" duration-ms="7438">
     <groups>
     </groups>
-    <test started-at="2024-04-24T15:15:23 EDT" name="Default test" finished-at="2024-04-24T15:15:27 EDT" duration-ms="4868">
+    <test started-at="2024-04-29T16:54:21 EDT" name="Parallel Tests chrome" finished-at="2024-04-29T16:54:24 EDT" duration-ms="2945">
       <class name="MyTests.FirstSeleniumScript">
-        <test-method is-config="true" signature="intializeExtentReport()[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:22 EDT" name="intializeExtentReport" finished-at="2024-04-24T15:15:23 EDT" duration-ms="262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeExtentReport -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:23 EDT" name="launchBrowser" finished-at="2024-04-24T15:15:24 EDT" duration-ms="1836" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-04-29T16:54:21 EDT" name="launchBrowser" finished-at="2024-04-29T16:54:23 EDT" duration-ms="1919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:24 EDT" name="launchApplication" finished-at="2024-04-24T15:15:27 EDT" duration-ms="2380" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-04-29T16:54:23 EDT" name="launchApplication" finished-at="2024-04-29T16:54:23 EDT" duration-ms="667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-04-24T15:15:27 EDT" duration-ms="17" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sne]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ATP]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="demo0()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-04-29T16:54:23 EDT" name="demo0" finished-at="2024-04-29T16:54:23 EDT" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="checkStatus" finished-at="2024-04-24T15:15:27 EDT" duration-ms="28" status="PASS">
+        </test-method> <!-- demo0 -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-04-29T16:54:23 EDT" name="checkStatus" finished-at="2024-04-29T16:54:23 EDT" duration-ms="15" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94] output={null}]]]>
+                <![CDATA[[TestResult name=demo0 status=SUCCESS method=FirstSeleniumScript.demo0()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="launchApplication" finished-at="2024-04-24T15:15:27 EDT" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-04-24T15:15:27 EDT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sreedhar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[KNL]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="checkStatus" finished-at="2024-04-24T15:15:27 EDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="launchApplication" finished-at="2024-04-24T15:15:27 EDT" duration-ms="126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-04-24T15:15:27 EDT" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Bharath]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ATP]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="checkStatus" finished-at="2024-04-24T15:15:27 EDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="close()[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="close" finished-at="2024-04-24T15:15:27 EDT" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-04-29T16:54:23 EDT" name="close" finished-at="2024-04-29T16:54:24 EDT" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:MyTests.FirstSeleniumScript@747ddf94]" started-at="2024-04-24T15:15:27 EDT" name="generateReport" finished-at="2024-04-24T15:15:28 EDT" duration-ms="312" status="PASS">
+      </class> <!-- MyTests.FirstSeleniumScript -->
+    </test> <!-- Parallel Tests chrome -->
+    <test started-at="2024-04-29T16:54:24 EDT" name="Parallel Tests edge" finished-at="2024-04-29T16:54:28 EDT" duration-ms="4466">
+      <class name="MyTests.FirstSeleniumScript">
+        <test-method is-config="true" signature="intializeExtentReport()[pri:0, instance:MyTests.FirstSeleniumScript@515c6049]" started-at="2024-04-29T16:54:20 EDT" name="intializeExtentReport" finished-at="2024-04-29T16:54:21 EDT" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeExtentReport -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@515c6049]" started-at="2024-04-29T16:54:24 EDT" name="launchBrowser" finished-at="2024-04-29T16:54:26 EDT" duration-ms="2067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@515c6049]" started-at="2024-04-29T16:54:26 EDT" name="launchApplication" finished-at="2024-04-29T16:54:27 EDT" duration-ms="1038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="demo0()[pri:0, instance:MyTests.FirstSeleniumScript@515c6049]" started-at="2024-04-29T16:54:27 EDT" name="demo0" finished-at="2024-04-29T16:54:27 EDT" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo0 -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@515c6049]" started-at="2024-04-29T16:54:27 EDT" name="checkStatus" finished-at="2024-04-29T16:54:27 EDT" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demo0 status=SUCCESS method=FirstSeleniumScript.demo0()[pri:0, instance:MyTests.FirstSeleniumScript@515c6049] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="close()[pri:0, instance:MyTests.FirstSeleniumScript@515c6049]" started-at="2024-04-29T16:54:27 EDT" name="close" finished-at="2024-04-29T16:54:28 EDT" duration-ms="1325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:MyTests.FirstSeleniumScript@515c6049]" started-at="2024-04-29T16:54:28 EDT" name="generateReport" finished-at="2024-04-29T16:54:29 EDT" duration-ms="498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
       </class> <!-- MyTests.FirstSeleniumScript -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Parallel Tests edge -->
+  </suite> <!-- Parallel Testing Suite -->
 </testng-results>

@@ -2,13 +2,17 @@ package Base;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -16,6 +20,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -26,20 +32,42 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static ExtentReports extentReports;
 	public static ExtentTest extentTest;
+	public static String browser;
 	String dest = "./ExtentReport/report.html";
-	ArrayList<String> methodList = new ArrayList<>();
+	String hubURL = "http://localhost:4444";
 
 	@BeforeTest
-	public void launchBrowser() {
+	@Parameters({ "browserName", "runMode" })
+	public void launchBrowser(@Optional("chrome") String browserName, @Optional("local") String runMode)
+			throws MalformedURLException {
+		browser = browserName;
+		DesiredCapabilities dc = new DesiredCapabilities();
+		if (browserName.equals("chrome")) {
+			if (runMode.equals("local")) {
+				driver = new ChromeDriver();
+				System.out.println("CHROME DRIVER");
+			} else {
+				dc.setBrowserName(browserName);
+				driver = new RemoteWebDriver(new URL(hubURL), dc);
+				System.out.println("CHROME DRIVER");
+			}
+		} else {
+			if (runMode.equals("local")) {
+				driver = new EdgeDriver();
+				System.out.println("EDGE DRIVER");
+			} else {
+				browserName = "MicrosoftEdge";
+				dc.setBrowserName(browserName);
+				driver = new RemoteWebDriver(new URL(hubURL), dc);
+				System.out.println("EDGE DRIVER");
+			}
+			driver.manage().window().maximize();
 
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-
+		}
 	}
 
 	@BeforeMethod
 	public void launchApplication() {
-
 		driver.get("https://www.selenium.dev/");
 	}
 
@@ -48,7 +76,7 @@ public class BaseClass {
 		String methodName = result.getName();
 
 		if (result.getStatus() == ITestResult.SUCCESS) {
-			extentTest = extentReports.createTest(methodName);
+			extentTest = extentReports.createTest(methodName).log(Status.INFO, methodName + " running on " + browser);
 			extentTest.log(Status.PASS, methodName + " is a passed test case");
 		} else if (result.getStatus() == ITestResult.FAILURE) {
 			extentTest = extentReports.createTest(methodName);

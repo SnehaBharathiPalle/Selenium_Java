@@ -13,21 +13,24 @@ import org.testng.asserts.SoftAssert;
 import Base.BaseClass;
 
 public class FirstSeleniumScript extends BaseClass {
-	@Test // (retryAnalyzer = Base.MyRetry.class)
+	@Test  (retryAnalyzer = Base.MyRetry.class)
 	public void demo0() {
+		System.out.println("The thread ID  is " + Thread.currentThread().getId());
 		String expectedTitle = driver.getTitle();
 		SoftAssert softAssert = new SoftAssert();
-		softAssert.assertEquals("Seleniu", expectedTitle);
+		softAssert.assertEquals("Selenium", expectedTitle);
 		softAssert.assertAll();
 	}
 
+	@Ignore
 	@Test(dataProvider = "myData")
 	public void dataProviderTest(String name, String place) {
+		System.out.println("The thread ID for Chrome is " + Thread.currentThread().getId());
 		System.out.println(name + " is form " + place);
 	}
 
-	@DataProvider
-	public Object[] myData() {
+	@DataProvider(parallel = true)
+	public Object[][] myData() {
 		String[][] data = new String[][] { { "Sne", "ATP" }, { "Sreedhar", "KNL" }, { "Bharath", "ATP" } };
 		return data;
 	}
@@ -47,6 +50,7 @@ public class FirstSeleniumScript extends BaseClass {
 
 	}
 
+	@Ignore
 	@Test
 	public void aha() {
 		System.out.println("The thread ID for Chrome is " + Thread.currentThread().getId());
