@@ -50,8 +50,7 @@ public class FirstSeleniumScript extends BaseClass {
 
 	}
 
-	@Ignore
-	@Test
+	@Test (groups={"Docusign"})
 	public void aha() {
 		System.out.println("The thread ID for Chrome is " + Thread.currentThread().getId());
 		By by = By.xpath("//div[@id='main_navbar']//li//a");

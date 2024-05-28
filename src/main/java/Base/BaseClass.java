@@ -94,7 +94,7 @@ public class BaseClass {
 
 	public String failed(String methodName) {
 		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String des = "./Screenshots/" + methodName + ".png";
+		String des = "./Screenshots/" + methodName+"-"+browser+ ".png";
 		File destFile = new File(des);
 		try {
 			FileUtils.copyFile(source, destFile);

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="12" passed="8" failed="2" skipped="0">
+<testng-results retried="2" ignored="2" total="14" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-28T15:15:50 EDT" name="Parallel Testing Suite" finished-at="2024-05-28T15:16:05 EDT" duration-ms="15135">
+  <suite started-at="2024-05-28T16:18:12 EDT" name="Parallel Testing Suite" finished-at="2024-05-28T16:18:21 EDT" duration-ms="9395">
     <groups>
     </groups>
-    <test started-at="2024-05-28T15:15:50 EDT" name="Parallel Tests chrome" finished-at="2024-05-28T15:15:54 EDT" duration-ms="3830">
+    <test started-at="2024-05-28T16:18:12 EDT" name="Parallel Tests chrome" finished-at="2024-05-28T16:18:16 EDT" duration-ms="4236">
       <class name="MyTests.FirstSeleniumScript">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:50 EDT" name="launchBrowser" finished-at="2024-05-28T15:15:52 EDT" duration-ms="1922" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:12 EDT" name="launchBrowser" finished-at="2024-05-28T16:18:14 EDT" duration-ms="2221" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,84 +23,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:52 EDT" name="launchApplication" finished-at="2024-05-28T15:15:53 EDT" duration-ms="891" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:14 EDT" name="launchApplication" finished-at="2024-05-28T16:18:15 EDT" duration-ms="814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:52 EDT" name="launchApplication" finished-at="2024-05-28T15:15:52 EDT" duration-ms="770" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:14 EDT" name="launchApplication" finished-at="2024-05-28T16:18:14 EDT" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:52 EDT" name="launchApplication" finished-at="2024-05-28T15:15:52 EDT" duration-ms="624" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:14 EDT" name="launchApplication" finished-at="2024-05-28T16:18:14 EDT" duration-ms="600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="demo1()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:52 EDT" name="demo1" finished-at="2024-05-28T15:15:53 EDT" duration-ms="453" status="SKIP">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=125.0.6422.78)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2fc8f41c8dd75938fa1aa7076c9ece0b, getElementAttribute {name=innerText, id=f.B569E0B81BFC1893A151DC62838E914D.d.DA86AE2D780178E29FB1E8341FB31CE7.e.40}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\siddu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7912/devtool..., se:cdpVersion: 125.0.6422.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2fc8f41c8dd75938fa1aa7076c9ece0b)] -> xpath: //a[text()='About']//following-sibling::div//a]
-Session ID: 2fc8f41c8dd75938fa1aa7076c9ece0b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=125.0.6422.78)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2fc8f41c8dd75938fa1aa7076c9ece0b, getElementAttribute {name=innerText, id=f.B569E0B81BFC1893A151DC62838E914D.d.DA86AE2D780178E29FB1E8341FB31CE7.e.40}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\siddu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7912/devtool..., se:cdpVersion: 125.0.6422.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2fc8f41c8dd75938fa1aa7076c9ece0b)] -> xpath: //a[text()='About']//following-sibling::div//a]
-Session ID: 2fc8f41c8dd75938fa1aa7076c9ece0b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
-at MyTests.FirstSeleniumScript.demo1(FirstSeleniumScript.java:46)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo1 -->
-        <test-method signature="demo0()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:52 EDT" name="demo0" finished-at="2024-05-28T15:15:53 EDT" duration-ms="158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo0 -->
-        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T15:15:53 EDT" duration-ms="2" status="PASS">
+        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:14 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T16:18:14 EDT" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,251 +51,46 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="checkStatus" finished-at="2024-05-28T15:15:53 EDT" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:14 EDT" name="checkStatus" finished-at="2024-05-28T16:18:14 EDT" duration-ms="22" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e] output={null}]]]>
+                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="launchApplication" finished-at="2024-05-28T15:15:53 EDT" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:14 EDT" name="launchApplication" finished-at="2024-05-28T16:18:15 EDT" duration-ms="809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="checkStatus" finished-at="2024-05-28T15:15:53 EDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=demo0 status=SUCCESS method=FirstSeleniumScript.demo0()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T15:15:53 EDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sreedhar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[KNL]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="checkStatus" finished-at="2024-05-28T15:15:53 EDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="launchApplication" finished-at="2024-05-28T15:15:53 EDT" duration-ms="132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="checkStatus" finished-at="2024-05-28T15:15:53 EDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=demo1 status=SKIP method=FirstSeleniumScript.demo1()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="launchApplication" finished-at="2024-05-28T15:15:53 EDT" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T15:15:53 EDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Bharath]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ATP]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="checkStatus" finished-at="2024-05-28T15:15:53 EDT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method signature="demo1()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="demo1" finished-at="2024-05-28T15:15:53 EDT" duration-ms="45" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [8] but found [2]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [8] but found [2]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at MyTests.FirstSeleniumScript.demo1(FirstSeleniumScript.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo1 -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="checkStatus" finished-at="2024-05-28T15:15:53 EDT" duration-ms="122" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=demo1 status=FAILURE method=FirstSeleniumScript.demo1()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="close()[pri:0, instance:MyTests.FirstSeleniumScript@7d8995e]" started-at="2024-05-28T15:15:53 EDT" name="close" finished-at="2024-05-28T15:15:54 EDT" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- MyTests.FirstSeleniumScript -->
-    </test> <!-- Parallel Tests chrome -->
-    <test started-at="2024-05-28T15:15:54 EDT" name="Parallel Tests edge" finished-at="2024-05-28T15:16:05 EDT" duration-ms="11279">
-      <class name="MyTests.FirstSeleniumScript">
-        <test-method is-config="true" signature="intializeExtentReport()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:15:50 EDT" name="intializeExtentReport" finished-at="2024-05-28T15:15:50 EDT" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeExtentReport -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:15:54 EDT" name="launchBrowser" finished-at="2024-05-28T15:16:01 EDT" duration-ms="7798" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[MicrosoftEdge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:01 EDT" name="launchApplication" finished-at="2024-05-28T15:16:02 EDT" duration-ms="875" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:01 EDT" name="launchApplication" finished-at="2024-05-28T15:16:02 EDT" duration-ms="1037" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:01 EDT" name="launchApplication" finished-at="2024-05-28T15:16:03 EDT" duration-ms="1179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:02 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T15:16:02 EDT" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sne]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ATP]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:02 EDT" name="checkStatus" finished-at="2024-05-28T15:16:02 EDT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:02 EDT" name="launchApplication" finished-at="2024-05-28T15:16:03 EDT" duration-ms="443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="demo0()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:02 EDT" name="demo0" finished-at="2024-05-28T15:16:03 EDT" duration-ms="307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo0 -->
-        <test-method retried="true" signature="demo1()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="demo1" finished-at="2024-05-28T15:16:03 EDT" duration-ms="320" status="SKIP">
+        <test-method retried="true" signature="demo1()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:14 EDT" name="demo1" finished-at="2024-05-28T16:18:15 EDT" duration-ms="609" status="SKIP">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[stale element reference: stale element not found
-  (Session info: MicrosoftEdge=125.0.2535.67)
+  (Session info: chrome=125.0.6422.78)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [db298adbd8f6de8867049c85cd97e3da, getElementAttribute {name=href, id=f.20BA1CA0C63568DD73941BC20FB26180.d.38244179EEBB627D8FF117B6BFD2C425.e.44}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:7946}, msedge: {msedgedriverVersion: 125.0.2535.67 (626a82df5fa7..., userDataDir: C:\Users\siddu\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7946/devtool..., se:cdpVersion: 125.0.2535.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (db298adbd8f6de8867049c85cd97e3da)] -> xpath: //a[text()='About']//following-sibling::div//a]
-Session ID: db298adbd8f6de8867049c85cd97e3da]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [519d011898516f5e2caa2594b0eb98ae, getElementAttribute {name=href, id=f.4655F22BA66B558FC585131ECACE3F81.d.B71301741380342AD023D6D47CED56B5.e.40}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\siddu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9368/devtool..., se:cdpVersion: 125.0.6422.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (519d011898516f5e2caa2594b0eb98ae)] -> xpath: //a[text()='About']//following-sibling::div//a]
+Session ID: 519d011898516f5e2caa2594b0eb98ae]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: MicrosoftEdge=125.0.2535.67)
+  (Session info: chrome=125.0.6422.78)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [db298adbd8f6de8867049c85cd97e3da, getElementAttribute {name=href, id=f.20BA1CA0C63568DD73941BC20FB26180.d.38244179EEBB627D8FF117B6BFD2C425.e.44}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:7946}, msedge: {msedgedriverVersion: 125.0.2535.67 (626a82df5fa7..., userDataDir: C:\Users\siddu\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7946/devtool..., se:cdpVersion: 125.0.2535.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (db298adbd8f6de8867049c85cd97e3da)] -> xpath: //a[text()='About']//following-sibling::div//a]
-Session ID: db298adbd8f6de8867049c85cd97e3da
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [519d011898516f5e2caa2594b0eb98ae, getElementAttribute {name=href, id=f.4655F22BA66B558FC585131ECACE3F81.d.B71301741380342AD023D6D47CED56B5.e.40}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\siddu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9368/devtool..., se:cdpVersion: 125.0.6422.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (519d011898516f5e2caa2594b0eb98ae)] -> xpath: //a[text()='About']//following-sibling::div//a]
+Session ID: 519d011898516f5e2caa2594b0eb98ae
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -397,7 +127,11 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo1 -->
-        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T15:16:03 EDT" duration-ms="2" status="PASS">
+        <test-method signature="demo0()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="demo0" finished-at="2024-05-28T16:18:15 EDT" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo0 -->
+        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T16:18:15 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -413,33 +147,33 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="checkStatus" finished-at="2024-05-28T15:16:03 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="checkStatus" finished-at="2024-05-28T16:18:15 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad] output={null}]]]>
+                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="launchApplication" finished-at="2024-05-28T15:16:03 EDT" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="launchApplication" finished-at="2024-05-28T16:18:15 EDT" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="checkStatus" finished-at="2024-05-28T15:16:03 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="checkStatus" finished-at="2024-05-28T16:18:15 EDT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=demo0 status=SUCCESS method=FirstSeleniumScript.demo0()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad] output={null}]]]>
+                <![CDATA[[TestResult name=demo0 status=SUCCESS method=FirstSeleniumScript.demo0()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T15:16:03 EDT" duration-ms="2" status="PASS">
+        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T16:18:15 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -455,33 +189,33 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="checkStatus" finished-at="2024-05-28T15:16:03 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="checkStatus" finished-at="2024-05-28T16:18:15 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad] output={null}]]]>
+                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="checkStatus" finished-at="2024-05-28T15:16:03 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="checkStatus" finished-at="2024-05-28T16:18:15 EDT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=demo1 status=SKIP method=FirstSeleniumScript.demo1()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad] output={null}]]]>
+                <![CDATA[[TestResult name=demo1 status=SKIP method=FirstSeleniumScript.demo1()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="launchApplication" finished-at="2024-05-28T15:16:03 EDT" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="launchApplication" finished-at="2024-05-28T16:18:15 EDT" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="demo1()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="demo1" finished-at="2024-05-28T15:16:03 EDT" duration-ms="46" status="FAIL">
+        <test-method signature="demo1()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="demo1" finished-at="2024-05-28T16:18:15 EDT" duration-ms="56" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [8] but found [2]]]>
@@ -516,22 +250,288 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo1 -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:03 EDT" name="checkStatus" finished-at="2024-05-28T15:16:04 EDT" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:15 EDT" name="checkStatus" finished-at="2024-05-28T16:18:16 EDT" duration-ms="150" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=demo1 status=FAILURE method=FirstSeleniumScript.demo1()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad] output={null}]]]>
+                <![CDATA[[TestResult name=demo1 status=FAILURE method=FirstSeleniumScript.demo1()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="close()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:04 EDT" name="close" finished-at="2024-05-28T15:16:05 EDT" duration-ms="1391" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:MyTests.FirstSeleniumScript@293a5bf6]" started-at="2024-05-28T16:18:16 EDT" name="close" finished-at="2024-05-28T16:18:16 EDT" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:MyTests.FirstSeleniumScript@618b19ad]" started-at="2024-05-28T15:16:05 EDT" name="generateReport" finished-at="2024-05-28T15:16:05 EDT" duration-ms="304" status="PASS">
+      </class> <!-- MyTests.FirstSeleniumScript -->
+    </test> <!-- Parallel Tests chrome -->
+    <test started-at="2024-05-28T16:18:16 EDT" name="Parallel Tests edge" finished-at="2024-05-28T16:18:21 EDT" duration-ms="5123">
+      <class name="MyTests.FirstSeleniumScript">
+        <test-method is-config="true" signature="intializeExtentReport()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:11 EDT" name="intializeExtentReport" finished-at="2024-05-28T16:18:12 EDT" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeExtentReport -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:16 EDT" name="launchBrowser" finished-at="2024-05-28T16:18:18 EDT" duration-ms="1770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:18 EDT" name="launchApplication" finished-at="2024-05-28T16:18:19 EDT" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:18 EDT" name="launchApplication" finished-at="2024-05-28T16:18:18 EDT" duration-ms="802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:18 EDT" name="launchApplication" finished-at="2024-05-28T16:18:19 EDT" duration-ms="1119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:18 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T16:18:18 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sne]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ATP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderTest -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:18 EDT" name="checkStatus" finished-at="2024-05-28T16:18:18 EDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:18 EDT" name="launchApplication" finished-at="2024-05-28T16:18:19 EDT" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="demo0()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="demo0" finished-at="2024-05-28T16:18:19 EDT" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo0 -->
+        <test-method retried="true" signature="demo1()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="demo1" finished-at="2024-05-28T16:18:19 EDT" duration-ms="363" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: MicrosoftEdge=125.0.2535.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fdde58c22634a4d183803f4dbcbba02f, getElementAttribute {name=href, id=f.260FAE7704BE4FB7B00530B204F85500.d.774FCB8FEFC3121E50772D1457A4C888.e.44}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9395}, msedge: {msedgedriverVersion: 125.0.2535.67 (626a82df5fa7..., userDataDir: C:\Users\siddu\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9395/devtool..., se:cdpVersion: 125.0.2535.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (fdde58c22634a4d183803f4dbcbba02f)] -> xpath: //a[text()='About']//following-sibling::div//a]
+Session ID: fdde58c22634a4d183803f4dbcbba02f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=125.0.2535.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fdde58c22634a4d183803f4dbcbba02f, getElementAttribute {name=href, id=f.260FAE7704BE4FB7B00530B204F85500.d.774FCB8FEFC3121E50772D1457A4C888.e.44}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9395}, msedge: {msedgedriverVersion: 125.0.2535.67 (626a82df5fa7..., userDataDir: C:\Users\siddu\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9395/devtool..., se:cdpVersion: 125.0.2535.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (fdde58c22634a4d183803f4dbcbba02f)] -> xpath: //a[text()='About']//following-sibling::div//a]
+Session ID: fdde58c22634a4d183803f4dbcbba02f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
+at MyTests.FirstSeleniumScript.demo1(FirstSeleniumScript.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo1 -->
+        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T16:18:19 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sreedhar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[KNL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderTest -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="checkStatus" finished-at="2024-05-28T16:18:19 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="launchApplication" finished-at="2024-05-28T16:18:19 EDT" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="checkStatus" finished-at="2024-05-28T16:18:19 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demo0 status=SUCCESS method=FirstSeleniumScript.demo0()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="dataProviderTest" data-provider="myData" finished-at="2024-05-28T16:18:19 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bharath]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ATP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderTest -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="checkStatus" finished-at="2024-05-28T16:18:19 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dataProviderTest status=SUCCESS method=FirstSeleniumScript.dataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="checkStatus" finished-at="2024-05-28T16:18:19 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demo1 status=SKIP method=FirstSeleniumScript.demo1()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="launchApplication" finished-at="2024-05-28T16:18:19 EDT" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="demo1()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:19 EDT" name="demo1" finished-at="2024-05-28T16:18:19 EDT" duration-ms="41" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [8] but found [2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [8] but found [2]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at MyTests.FirstSeleniumScript.demo1(FirstSeleniumScript.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo1 -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult)[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:20 EDT" name="checkStatus" finished-at="2024-05-28T16:18:20 EDT" duration-ms="168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demo1 status=FAILURE method=FirstSeleniumScript.demo1()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="close()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:20 EDT" name="close" finished-at="2024-05-28T16:18:21 EDT" duration-ms="1298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:MyTests.FirstSeleniumScript@6b2ea799]" started-at="2024-05-28T16:18:21 EDT" name="generateReport" finished-at="2024-05-28T16:18:21 EDT" duration-ms="317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->

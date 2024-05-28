@@ -4,6 +4,12 @@
 		<listener class-name="Base.Listeners" />
 		<listener class-name="Base.RetryListener" />
 	</listeners>
+	<groups> 
+		<run> 
+			<exclude name="Docusign">
+			</exclude>
+		</run>
+	</groups>
 	<!--<parameter name="runMode" value="local" />-->
 	<test name="Parallel Tests chrome" parallel="methods">
 		<parameter name="browserName" value="chrome" />

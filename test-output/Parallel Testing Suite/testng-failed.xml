@@ -7,6 +7,11 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Parallel Tests chrome(failed)">
     <parameter name="browserName" value="chrome"/>
+    <groups>
+      <run>
+        <exclude name="Docusign"/>
+      </run>
+    </groups>
     <classes>
       <class name="MyTests.FirstSeleniumScript">
         <methods>
@@ -23,6 +28,11 @@
   </test> <!-- Parallel Tests chrome(failed) -->
   <test thread-count="5" parallel="methods" name="Parallel Tests edge(failed)">
     <parameter name="browserName" value="MicrosoftEdge"/>
+    <groups>
+      <run>
+        <exclude name="Docusign"/>
+      </run>
+    </groups>
     <classes>
       <class name="MyTests.FirstSeleniumScript">
         <methods>
