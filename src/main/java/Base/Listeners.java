@@ -15,7 +15,7 @@ public class Listeners extends BaseClass implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println(result.getName() + " got failed");
-		System.out.println("Capturing ScreenShot");
+		System.out.println("Capturing ScreenShot for "+result.getName());
 		failed(result.getName());
 	}
 

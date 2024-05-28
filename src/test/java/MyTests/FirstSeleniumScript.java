@@ -13,7 +13,7 @@ import org.testng.asserts.SoftAssert;
 import Base.BaseClass;
 
 public class FirstSeleniumScript extends BaseClass {
-	@Test  (retryAnalyzer = Base.MyRetry.class)
+	@Test
 	public void demo0() {
 		System.out.println("The thread ID  is " + Thread.currentThread().getId());
 		String expectedTitle = driver.getTitle();
@@ -22,20 +22,20 @@ public class FirstSeleniumScript extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Ignore
+	
 	@Test(dataProvider = "myData")
 	public void dataProviderTest(String name, String place) {
 		System.out.println("The thread ID for Chrome is " + Thread.currentThread().getId());
 		System.out.println(name + " is form " + place);
 	}
 
-	@DataProvider(parallel = true)
+	@DataProvider//(parallel = true)
 	public Object[][] myData() {
 		String[][] data = new String[][] { { "Sne", "ATP" }, { "Sreedhar", "KNL" }, { "Bharath", "ATP" } };
 		return data;
 	}
 
-	@Ignore
+	
 	@Test
 	public void demo1() {
 		System.out.println("The thread ID for Chrome is " + Thread.currentThread().getId());

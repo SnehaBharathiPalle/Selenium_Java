@@ -73,14 +73,16 @@ public class BaseClass {
 
 	@AfterMethod
 	public void checkStatus(ITestResult result) {
+		System.out.println("******************************");
 		String methodName = result.getName();
 
 		if (result.getStatus() == ITestResult.SUCCESS) {
-			extentTest = extentReports.createTest(methodName).log(Status.INFO, methodName + " running on " + browser);
-			extentTest.log(Status.PASS, methodName + " is a passed test case");
+			extentTest = extentReports.createTest(methodName).log(Status.INFO, methodName + " ran on " + browser)
+					.log(Status.PASS, methodName + " is a passed test case");
 		} else if (result.getStatus() == ITestResult.FAILURE) {
 			extentTest = extentReports.createTest(methodName);
 			extentTest.log(Status.FAIL, methodName + " is a failed test case")
+			.log(Status.INFO, methodName + " ran on " + browser)
 					.addScreenCaptureFromPath(failed(methodName));
 		}
 	}

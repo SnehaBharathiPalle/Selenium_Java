@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Parallel Testing Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="runMode" value="local"/>
   <listeners>
     <listener class-name="Base.Listeners"/>
     <listener class-name="Base.RetryListener"/>
@@ -17,13 +16,13 @@
           <include name="close"/>
           <include name="checkStatus"/>
           <include name="launchApplication"/>
-          <include name="demo0"/>
+          <include name="demo1"/>
         </methods>
       </class> <!-- MyTests.FirstSeleniumScript -->
     </classes>
   </test> <!-- Parallel Tests chrome(failed) -->
   <test thread-count="5" parallel="methods" name="Parallel Tests edge(failed)">
-    <parameter name="browserName" value="edge"/>
+    <parameter name="browserName" value="MicrosoftEdge"/>
     <classes>
       <class name="MyTests.FirstSeleniumScript">
         <methods>
@@ -33,7 +32,7 @@
           <include name="close"/>
           <include name="checkStatus"/>
           <include name="launchApplication"/>
-          <include name="demo0"/>
+          <include name="demo1"/>
         </methods>
       </class> <!-- MyTests.FirstSeleniumScript -->
     </classes>

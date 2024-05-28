@@ -9,14 +9,80 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Parallel Testing Suite</th></tr>
-<tr><td><a href="#t0">Parallel Tests chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2,945</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Parallel Tests edge</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,466</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">7,411</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Parallel Tests chrome</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">3,830</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Parallel Tests edge</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">11,279</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num attn">2</th><th class="num attn">2</th><th class="num">15,109</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Parallel Tests chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">MyTests.FirstSeleniumScript</td><td><a href="#m0">demo0</a></td><td rowspan="1">1714424063822</td><td rowspan="1">35</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Parallel Tests edge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">MyTests.FirstSeleniumScript</td><td><a href="#m1">demo0</a></td><td rowspan="1">1714424067291</td><td rowspan="1">21</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Parallel Tests chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">MyTests.FirstSeleniumScript</td><td><a href="#m0">demo1</a></td><td rowspan="1">1716923753515</td><td rowspan="1">45</td></tr><tr><th colspan="4">Parallel Tests chrome &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">MyTests.FirstSeleniumScript</td><td><a href="#m1">demo1</a></td><td rowspan="1">1716923752843</td><td rowspan="1">453</td></tr><tr><th colspan="4">Parallel Tests chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">MyTests.FirstSeleniumScript</td><td><a href="#m2">dataProviderTest</a></td><td rowspan="3">1716923753271</td><td rowspan="3">1</td></tr><tr class="passedeven"><td><a href="#m3">dataProviderTest</a></td></tr><tr class="passedeven"><td><a href="#m4">dataProviderTest</a></td></tr><tr class="passedeven"><td><a href="#m5">demo0</a></td><td rowspan="1">1716923752988</td><td rowspan="1">158</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Parallel Tests edge &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">MyTests.FirstSeleniumScript</td><td><a href="#m6">demo1</a></td><td rowspan="1">1716923763595</td><td rowspan="1">46</td></tr><tr><th colspan="4">Parallel Tests edge &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">MyTests.FirstSeleniumScript</td><td><a href="#m7">demo1</a></td><td rowspan="1">1716923763122</td><td rowspan="1">320</td></tr><tr><th colspan="4">Parallel Tests edge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">MyTests.FirstSeleniumScript</td><td><a href="#m8">dataProviderTest</a></td><td rowspan="3">1716923763258</td><td rowspan="3">2</td></tr><tr class="passedeven"><td><a href="#m9">dataProviderTest</a></td></tr><tr class="passedeven"><td><a href="#m10">dataProviderTest</a></td></tr><tr class="passedeven"><td><a href="#m11">demo0</a></td><td rowspan="1">1716923762971</td><td rowspan="1">307</td></tr></tbody>
 </table>
-<h2>Parallel Tests chrome</h2><h3 id="m0">MyTests.FirstSeleniumScript#demo0</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Parallel Tests edge</h2><h3 id="m1">MyTests.FirstSeleniumScript#demo0</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Parallel Tests chrome</h2><h3 id="m0">MyTests.FirstSeleniumScript#demo1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [8] but found [2]
+	at MyTests.FirstSeleniumScript.demo1(FirstSeleniumScript.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">MyTests.FirstSeleniumScript#demo1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=125.0.6422.78)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2fc8f41c8dd75938fa1aa7076c9ece0b, getElementAttribute {name=innerText, id=f.B569E0B81BFC1893A151DC62838E914D.d.DA86AE2D780178E29FB1E8341FB31CE7.e.40}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\siddu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7912/devtool..., se:cdpVersion: 125.0.6422.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2fc8f41c8dd75938fa1aa7076c9ece0b)] -&gt; xpath: //a[text()=&apos;About&apos;]//following-sibling::div//a]
+Session ID: 2fc8f41c8dd75938fa1aa7076c9ece0b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
+	at MyTests.FirstSeleniumScript.demo1(FirstSeleniumScript.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">MyTests.FirstSeleniumScript#dataProviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Sreedhar</td><td>KNL</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">MyTests.FirstSeleniumScript#dataProviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Bharath</td><td>ATP</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">MyTests.FirstSeleniumScript#dataProviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Sne</td><td>ATP</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">MyTests.FirstSeleniumScript#demo0</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Parallel Tests edge</h2><h3 id="m6">MyTests.FirstSeleniumScript#demo1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [8] but found [2]
+	at MyTests.FirstSeleniumScript.demo1(FirstSeleniumScript.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">MyTests.FirstSeleniumScript#demo1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=125.0.2535.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [db298adbd8f6de8867049c85cd97e3da, getElementAttribute {name=href, id=f.20BA1CA0C63568DD73941BC20FB26180.d.38244179EEBB627D8FF117B6BFD2C425.e.44}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 125.0.2535.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:7946}, msedge: {msedgedriverVersion: 125.0.2535.67 (626a82df5fa7..., userDataDir: C:\Users\siddu\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7946/devtool..., se:cdpVersion: 125.0.2535.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (db298adbd8f6de8867049c85cd97e3da)] -&gt; xpath: //a[text()=&apos;About&apos;]//following-sibling::div//a]
+Session ID: db298adbd8f6de8867049c85cd97e3da
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
+	at MyTests.FirstSeleniumScript.demo1(FirstSeleniumScript.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">MyTests.FirstSeleniumScript#dataProviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Sreedhar</td><td>KNL</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">MyTests.FirstSeleniumScript#dataProviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Bharath</td><td>ATP</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">MyTests.FirstSeleniumScript#dataProviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Sne</td><td>ATP</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">MyTests.FirstSeleniumScript#demo0</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
