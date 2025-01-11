@@ -11,9 +11,7 @@
           <include name="close"/>
           <include name="checkStatus"/>
           <include name="launchApplication"/>
-          <include name="dataProviderTest"/>
           <include name="demo0"/>
-          <include name="demo1"/>
         </methods>
       </class> <!-- MyTests.FirstSeleniumScript -->
     </classes>

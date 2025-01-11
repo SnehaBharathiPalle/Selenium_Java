@@ -6,24 +6,13 @@
 	</listeners>
 	<groups> 
 		<run> 
-			<exclude name="Docusign">
+			<exclude name="complex">
 			</exclude>
 		</run>
 	</groups>
 	<!--<parameter name="runMode" value="local" />-->
 	<test name="Parallel Tests chrome" parallel="methods">
 		<parameter name="browserName" value="chrome" />
-		<classes>
-			<class name="MyTests.FirstSeleniumScript" />
-			<!--
-			<methods>
-				<include name="demo0" />
-			</methods>
-			-->
-		</classes>
-	</test>
-	<test name="Parallel Tests edge" parallel="methods">
-		<parameter name="browserName" value="MicrosoftEdge" />
 		<classes>
 			<class name="MyTests.FirstSeleniumScript" />
 			<!--

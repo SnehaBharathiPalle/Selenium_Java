@@ -9,7 +9,7 @@
     <parameter name="browserName" value="chrome"/>
     <groups>
       <run>
-        <exclude name="Docusign"/>
+        <exclude name="complex"/>
       </run>
     </groups>
     <classes>
@@ -19,32 +19,13 @@
           <include name="launchBrowser"/>
           <include name="generateReport"/>
           <include name="close"/>
+          <include name="aha"/>
           <include name="checkStatus"/>
           <include name="launchApplication"/>
+          <include name="demo0"/>
           <include name="demo1"/>
         </methods>
       </class> <!-- MyTests.FirstSeleniumScript -->
     </classes>
   </test> <!-- Parallel Tests chrome(failed) -->
-  <test thread-count="5" parallel="methods" name="Parallel Tests edge(failed)">
-    <parameter name="browserName" value="MicrosoftEdge"/>
-    <groups>
-      <run>
-        <exclude name="Docusign"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="MyTests.FirstSeleniumScript">
-        <methods>
-          <include name="intializeExtentReport"/>
-          <include name="launchBrowser"/>
-          <include name="generateReport"/>
-          <include name="close"/>
-          <include name="checkStatus"/>
-          <include name="launchApplication"/>
-          <include name="demo1"/>
-        </methods>
-      </class> <!-- MyTests.FirstSeleniumScript -->
-    </classes>
-  </test> <!-- Parallel Tests edge(failed) -->
 </suite> <!-- Failed suite [Parallel Testing Suite] -->
